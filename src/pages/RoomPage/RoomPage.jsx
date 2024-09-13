@@ -6,8 +6,8 @@ const RoomPage = () => {
   const { roomId } = useParams();
 
   const myMeeting = async (element) => {
-    const appID = 715105510;
-    const serverSecret = "5f34c7c0725bc5cf9943b84659617afb";
+    const appID = 952741825;
+    const serverSecret = "d9938d0468e33803316c2e3c16b7759c";
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
       serverSecret,
@@ -23,7 +23,7 @@ const RoomPage = () => {
       sharedLinks: [
         {
           name: "Copy Link",
-          url: `http://localhost:5173/room/${roomId}`,
+          url: `https://video-audio-call.vercel.app//room/${roomId}`,
         },
       ],
       scenario: {
